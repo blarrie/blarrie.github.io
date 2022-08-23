@@ -7,11 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    .container {
+      height: 300px;
+      position: relative;
+
+    }
+
     .center {
       margin-left: auto;
       margin-right: auto;
     }
-    h1,h2 {
+
+    h1,
+    h2 {
       text-align: center;
     }
   </style>
@@ -26,49 +34,53 @@
   <h2> Here are some of my favourite cats :) </h2>
   <form method="post">
 
-  <table border="1" class="center">
+    <table border="1" class="center">
 
-    <tr>
-      <th colspan="3">
-        <h2>Favourite Catties</h2>
-      </th>
-    </tr>
-    <tr>
-      <td>Sleazy</td>
-      <td> <img src="./photos/slez.jpg" height="300"> </td>
-      <td> <input type="checkbox" id="cat1" value="cats[]">
-        <label for="cat1">this one!</label>
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Bo (Big Orange)</td>
-      <td> 
-        <img src="./photos/betterbo.jpg" height="300">
-      </td>
-      <td> <input type="checkbox" id="cat2" value="cats[]">
-        <label for="cat2">this one!</label>
-      </td>
-    </tr>
+      <tr>
+        <th colspan="3">
+          <h2>Favourite Catties</h2>
+        </th>
+      </tr>
+      <tr>
+        <td>Sleazy</td>
+        <td> <img src="./photos/slez.jpg" height="300"> </td>
+        <td> <input type="checkbox" id="cat1" value="cats[]">
+          <label for="cat1">this one!</label>
+        </td>
+      </tr>
 
-    <tr>
-      <td>Amazon</td>
-      <td> <img src="./photos/amazon.jpg" height="300"> </td>
-      <td> <input type="checkbox" id="cat3" value="cats[]">
-        <label for="cat3">this one!</label>
-      </td>
-    </tr>
-    <tr>
-      <td>KitKat</td>
-      <td> <img src="./photos/smuCat.jpg" height="300"> </td>
-      <td> <input type="checkbox" id="cat4" value="cats[]">
-        <label for="cat4">this one!</label>
-      </td>
-    </tr>
+      <tr>
+        <td>Bo (Big Orange)</td>
+        <td>
+          <img src="./photos/betterbo.jpg" height="300">
+        </td>
+        <td> <input type="checkbox" id="cat2" value="cats[]">
+          <label for="cat2">this one!</label>
+        </td>
+      </tr>
 
-  </table>
-  <br>
-  <input type="submit" value="Submit" style="text-align:center; height: 30px; width: 100px;">
+      <tr>
+        <td>Amazon</td>
+        <td> <img src="./photos/amazon.jpg" height="300"> </td>
+        <td> <input type="checkbox" id="cat3" value="cats[]">
+          <label for="cat3">this one!</label>
+        </td>
+      </tr>
+      <tr>
+        <td>KitKat</td>
+        <td> <img src="./photos/smuCat.jpg" height="300"> </td>
+        <td> <input type="checkbox" id="cat4" value="cats[]">
+          <label for="cat4">this one!</label>
+        </td>
+      </tr>
+
+    </table>
+    <br>
+    <div class="container">
+      <div class="center">
+        <input type="submit" value="Submit" style="align-items:center; height: 30px; width: 100px;">
+      </div>
+    </div>
   </form>
 
 </body>
