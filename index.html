@@ -10,6 +10,13 @@
         /* #home {
             height: 100vh;
         } */
+        #b_color {
+            background-color: lightseagreen;
+        }
+
+        .smallFont {
+            font-size: small;
+        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -22,7 +29,8 @@
 
         <nav class="navbar navbar-expand-md bg-dark">
             <div class="container-fluid border rounded m-2 p-2">
-                <a class="navbar-brand text-light ps-2" href="#">Navbar</a>
+                <a class="navbar-brand text-light ps-2" href="https://www.linkedin.com/in/claraaw/"
+                    target="_blank">Clara's Website</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -55,7 +63,8 @@
                     <h1 class="display-3 text-light"><strong>Hi! I'm Clara Aw</strong></h1>
                     <h5 class="text-muted mb-3">Welcome to My Personal Website!</h5>
 
-                    <button type="button" class="my-3 btn btn-link btn-outline-info btn-lg">More</button>
+                    <a class="btn" href="#" role="button" id="b_color">More</a>
+
                 </div>
 
                 <div class="col-md-5 mx-auto">
@@ -72,18 +81,22 @@
 
                 <ul class="list-group col-md-9">
                     <li class="list-group-item p-3 list-group-item-info">I am a Year 2 SCIS Student</li>
-                    <!-- <li class="list-group-item p-3">My favourite animals are cats and rabbits</li> -->
                     <li class="list-group-item p-3">Some hobbies I have are searching for cats and
                         skateboarding</li>
-                    <li class="list-group-item p-3 list-group-item-info">In my free time I like listening to music and
-                        reading</li>
+                    <li class="list-group-item p-3 list-group-item-info">I like listening to music, reading and instant
+                        noodles</li>
                 </ul>
+                <button type="button" class="btn btn-primary mx-auto mt-3" style="width: 300px;">Click for a surprise!</button>
+
             </div>
 
         </div>
-        <div class="container-fluid w-50 py-3">
-            <p class="display-5 text-light text-center
-            ">Notable Cats</p>
+
+
+        <div class="container-fluid w-50 py-3" id="surprise">
+            <p class="display-5 text-light text-center">Notable Cats</p>
+            <h5 class="text-muted mb-3 text-center">cats i would like to steal from the streets</h5>
+
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -117,19 +130,58 @@
             </div>
 
         </div>
+        <hr class="text-light mx-3">
+        <div class="container-fluid">
+            <h1 class="text-light display-5 text-center">Technical Skills</h1>
+            <div class="row">
+                <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
+                    <img src="./images/githubIcon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">GitHub</h5>
+                    </div>
+                  </div>
 
-        <div class="container-fluid bg-light" id="footer">
-            <p class="text-center p-0 m-0">@Clara Aw 2020</p>
+                  <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
+                    <img src="./images/htmlIcon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">HTML</h5>
+                    </div>
+                  </div>
+
+                  <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
+                    <img src="./images/phpIcon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">PHP</h5>
+
+                    </div>
+                  </div>
+
+                  
+                  <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
+                    <img src="./images/pythonIcon.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Python</h5>
+                    </div>
+                  </div>
+
+
+
+            </div>
+
+            <div class="container-fluid bg-light" id="footer">
+                <p class="text-center p-0 m-0">@Clara Aw 2020</p>
+            </div>
         </div>
-    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+
 </body>
 
 </html>
