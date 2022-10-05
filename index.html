@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clara's Website</title>
     <style>
-        /* #home {
-            height: 100vh;
-        } */
         #b_color {
             background-color: lightseagreen;
         }
@@ -42,13 +39,10 @@
                             <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Work</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-light" href="#about_me">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Footer</a>
+                            <a class="nav-link text-light" href="#skills">Skills</a>
                         </li>
                     </ul>
 
@@ -63,8 +57,6 @@
                     <h1 class="display-3 text-light"><strong>Hi! I'm Clara Aw</strong></h1>
                     <h5 class="text-muted mb-3">Welcome to My Personal Website!</h5>
 
-                    <a class="btn" href="#" role="button" id="b_color">More</a>
-
                 </div>
 
                 <div class="col-md-5 mx-auto">
@@ -77,7 +69,7 @@
 
         <div class="container-fluid p-5 mx-auto" id="about_me">
             <div class="row">
-                <h1 class="text-center display-4 text-light my-auto col-md-2 me-5 ">About Me</h1>
+                <h1 class="text-center display-4 text-light my-auto col-md-2 me-5 mb-2">About Me</h1>
 
                 <ul class="list-group col-md-9">
                     <li class="list-group-item p-3 list-group-item-info">I am a Year 2 SCIS Student</li>
@@ -86,101 +78,86 @@
                     <li class="list-group-item p-3 list-group-item-info">I like listening to music, reading and instant
                         noodles</li>
                 </ul>
-                <button type="button" class="btn btn-primary mx-auto mt-3" style="width: 300px;">Click for a surprise!</button>
+                <button type="button" class="btn btn-primary mx-auto mt-3" style="width: 300px;" id="b_color"
+                    onclick="showCats()">Click for a surprise!</button>
 
             </div>
 
         </div>
 
-
-        <div class="container-fluid w-50 py-3" id="surprise">
-            <p class="display-5 text-light text-center">Notable Cats</p>
-            <h5 class="text-muted mb-3 text-center">cats i would like to steal from the streets</h5>
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/bothecat.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/slez.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/randcat.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+        <div id="surprise">
 
         </div>
+
         <hr class="text-light mx-3">
-        <div class="container-fluid">
+
+        <div class="container-fluid" id="skills">
             <h1 class="text-light display-5 text-center">Technical Skills</h1>
             <div class="row">
                 <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
                     <img src="./images/githubIcon.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title text-center">GitHub</h5>
+                        <h5 class="card-title text-center">GitHub</h5>
                     </div>
-                  </div>
+                </div>
 
-                  <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
+                <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
                     <img src="./images/htmlIcon.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title text-center">HTML</h5>
+                        <h5 class="card-title text-center">HTML</h5>
                     </div>
-                  </div>
+                </div>
 
-                  <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
+                <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
                     <img src="./images/phpIcon.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title text-center">PHP</h5>
-
+                        <h5 class="card-title text-center">PHP</h5>
                     </div>
-                  </div>
+                </div>
 
-                  
-                  <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
+
+                <div class="card col-md-3 m-3 mx-auto" style="width: 290px;">
                     <img src="./images/pythonIcon.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Python</h5>
+                        <h5 class="card-title text-center">Python</h5>
                     </div>
-                  </div>
-
-
+                </div>
 
             </div>
 
-            <div class="container-fluid bg-light" id="footer">
-                <p class="text-center p-0 m-0">@Clara Aw 2020</p>
-            </div>
+        </div>
+
+        <hr class="text-light mx-3">
+
+        <div class="container-fluid text-center mb-3">
+            <p class="text-light display-6 text-center">Thanks for visiting!</p>
+
+            <a href="#https://www.instagram.com/blarrieeeee/" target="_blank">
+                <img src="./images/instaIcon.png" width="50px">
+            </a>
+
+            <a href="#https://www.linkedin.com/in/claraaw/" target="_blank">
+                <img src="./images/linkedinIcon.png" width="40px">
+            </a>
+
+            <a href="#https://github.com/blarrie" target="_blank">
+                <img src="./images/githubiconBlack.jpeg" width="50px">
+            </a>
         </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-            crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <div class="container-fluid bg-light" id="footer">
+            <p class="text-center p-0 m-0">@Clara Aw 2020</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 </body>
 
